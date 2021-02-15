@@ -1,0 +1,29 @@
+.invalid input{
+    border: 1px red solid;
+}
+.container{
+    max-width: 1170px;
+}
+.create_post{
+    color:rgba(54,55,178,1)
+}
+.create_title{
+    margin-right: 15px;
+}
+.create-blocks{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.disabled{
+    background-color: red;
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 750px){
+    .container{
+        max-width: 600px;
+    }
+    .create-blocks{
+        margin-top:unset;
+    }
+}

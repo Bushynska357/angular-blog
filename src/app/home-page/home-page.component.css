@@ -1,0 +1,16 @@
+.card_of_post{
+    display: flex;
+    flex-direction: column;
+}
+.route_to_admin{
+    margin: 15px;
+    padding: 15px;
+    font-family: 'Roboto',sans-serif;
+}
+a{
+    text-decoration: underline;
+    color: rgba(54,55,178,1);
+}
+a:hover{
+    font-weight: 600;
+}

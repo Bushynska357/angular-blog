@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import '~quill/dist/quill.snow.css';
+
+*{
+    margin: 0 auto;
+    /* width: 100%; */
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+    color:aliceblue;
+    padding: 20px;
+}
+app-home-page{
+    width: 100%;
+}
+app-post-page{
+    width: 100%;
+}
+.btn{
+    background: rgba(54,55,178,1);
+    /* box-shadow: 8px -2px 26.5px rgb(54 55 178); */
+    outline: none;
+    color: #fff;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

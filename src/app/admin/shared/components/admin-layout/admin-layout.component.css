@@ -1,0 +1,26 @@
+li{
+    display: inline;
+    margin-right: 10px;
+}
+.admin-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(54,55,178,1) 0%, rgba(95,82,154,0.6702031154258579) 75%, rgba(0,53,255,1) 100%);
+    box-shadow: 0 8px 33.5px black;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    color:aliceblue;
+    padding: 20px;
+}
+a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    color:aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:underline;
+}

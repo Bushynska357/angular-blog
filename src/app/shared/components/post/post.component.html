@@ -1,0 +1,13 @@
+<div class="card">
+    <div>
+        <h2>{{post.title}}</h2>
+        <small>{{post.date | date:'dd.MM.yyyy'}}</small>
+    </div>
+
+    <div class="card_open_part">
+        <p>{{post.author}}</p>
+    </div>
+
+    <button class="btn" [routerLink]="['/post', post.id]" >Open post</button>
+    
+</div>

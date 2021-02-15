@@ -1,0 +1,21 @@
+<app-alert></app-alert>
+
+<nav class="admin-layout">
+    <p routerLink = "/">Admin</p>
+
+    <ul>
+        <li>
+            <a routerLink = "dashboard">Dashboard</a>
+        </li>
+        <li >
+            <a [routerLink] = "['/admin', 'create']">Create post</a>
+        </li>
+        <li >
+            <a href = "#" (click) = "logout($event)">Log out</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <router-outlet></router-outlet>
+</div>
+

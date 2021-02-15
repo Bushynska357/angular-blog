@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="dashboard_content" *ngIf = 'posts.length; else loading'>
+        <div class="search_post">
+            <input type="text" placeholder="Search" [(ngModel)]="searchPost">
+        </div>
+        <table class="table_posts">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Author</th>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let post of posts | search:searchPost; let idx = index">
+                <td>{{idx+1}}</td>  
+                <td>{{ post.author }}</td> 
+                <td>{{ post.title }}</td> 
+                <td>{{ post.date | date:'medium'}}</td> 
+                <td class="act">
+                    <button class="btn btn_dashboard" [routerLink]="['/admin', 'post', post.id , 'edit']">Open</button>
+                    <a class="btn btn_dashboard" (click)="remove(post.id)">Remove</a>
+                </td> 
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <ng-template #loading>
+        <p>Loading</p>
+    </ng-template>
+</div>
+
